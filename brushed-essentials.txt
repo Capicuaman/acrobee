@@ -1,0 +1,7 @@
+set motor_pwm_protocol = BRUSHED
+set use_unsynced_pwm = on
+set motor_pwm_rate=16000
+name IDEAOPEDIA
+feature motor_stop
+Map TAER1234
+save
