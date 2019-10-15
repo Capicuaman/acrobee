@@ -1,0 +1,40 @@
+# https://github.com/betaflight/betaflight/wiki/Community-Presets
+# Ideaopedia's Betaflight 4.0
+
+#Filter Settings
+set gyro_lowpass_type = PT1
+set dyn_notch_min_hz = 150
+set dyn_lpf_gyro_min_hz = 150
+set dyn_lpf_gyro_max_hz = 750
+set dyn_lpf_dterm_min_hz = 150
+set dyn_lpf_dterm_max_hz = 250
+set dterm_lowpass_type = BiQUAD
+set dterm_lowpass2_hz = 0
+
+#PID Gains Settings
+set vbat_pid_gain = ON
+set anti_gravity_gain = 5000
+
+set p_pitch = 33
+set i_pitch = 85
+set d_pitch = 35
+
+set p_roll = 28
+set i_roll = 78
+set d_roll = 32
+
+set d_min_pitch = 18
+set d_min_roll = 16
+set d_min_boost_gain = 30
+set d_min_advance = 0
+
+set pidsum_limit = 1000 #unleashes PID Sum to be 100% (not restricted to 50% by default)
+
+#Assumes Freestyle | For racing use "Setpoint" and cutoff = 20
+#Assumes Racing | For freestyle use "GYRO" and cutoff = 10
+set iterm_relax_type = Setpoint
+set iterm_relax_cutoff = 20
+
+#TPA Settings (which is D-term only by default)
+set tpa_rate = 80
+set tpa_breakpoint = 1800
