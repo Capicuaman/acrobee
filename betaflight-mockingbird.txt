@@ -1,0 +1,111 @@
+# 
+# Ideaopedia's Betaflight / BEEBRAIN_LITE (BBL) 4.0.1 Jun 14 2019 / 11:01:56 (73a0bc22a) MSP API: 1.41
+#
+
+# start the command batch
+batch start
+
+board_name BEEBRAIN_LITE
+manufacturer_id 
+
+# name
+name Tigre_Bee
+
+# resources
+
+# timer
+
+# dma
+
+# mixer
+
+# servo
+
+# servo mix
+
+
+# feature
+
+# beeper
+
+# beacon
+
+# map
+map TAER1234
+
+# serial
+
+# led
+led 0 7,7::CTO:7
+led 1 8,7::CTO:7
+led 2 9,7:S:CTO:7
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1675 2075 0 0
+aux 1 1 1 900 2100 0 0
+aux 2 47 1 1375 1650 0 0
+
+# adjrange
+
+# rxrange
+
+# vtx
+
+# rxfail
+
+# display_name
+
+# master
+set gyro_sync_denom = 2
+set dyn_lpf_gyro_min_hz = 0
+set acc_trim_roll = -4
+set motor_pwm_rate = 16000
+set vbat_min_cell_voltage = 100
+set vbat_warning_cell_voltage = 100
+set vtx_power = 0
+set frsky_spi_tx_id = 101,70
+set frsky_spi_offset = -6
+set frsky_spi_bind_hop_data = 1,181,126,71,16,196,141,86,31,211,156,101,48,226,171,116,61,6,186,131,76,21,201,146,93,36,216,161,106,51,231,178,121,66,11,191,136,81,26,206,151,96,41,223,166,111,56,0,0,0
+
+# profile
+profile 0
+
+set dyn_lpf_dterm_min_hz = 0
+set dyn_lpf_dterm_max_hz = 260
+set dterm_lowpass_type = PT1
+set p_pitch = 100
+set i_pitch = 130
+set d_pitch = 45
+set p_roll = 90
+set i_roll = 110
+set d_roll = 45
+set p_yaw = 190
+set i_yaw = 120
+set d_yaw = 0
+set angle_level_strength = 80
+set horizon_level_strength = 30
+set horizon_transition = 25
+
+# rateprofile
+rateprofile 0
+
+set roll_rc_rate = 220
+set pitch_rc_rate = 220
+set yaw_rc_rate = 206
+set roll_srate = 0
+set pitch_srate = 0
+set yaw_srate = 0
+
+# Reduce max throttle
+Set throttle_limit_type = scale
+Set throttle_limit_percent = 80
+
+
+# connect to googles
+set vtx_power = 1
+
+
